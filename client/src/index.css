@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 50px 30px;
+}
+:root {
+  --Font: Arial, sans-serif;
+  --primary: #e3dac9;
+  --secondary: white;
+  --tertiary: #b12704;
+  --dark: #960018;
+  --text: black;
+  --NavText: black;
+  --hover: white;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
+}
+
+body {
+  background-color: var(--dark);
+}
+
+.nav {
+  background-color: var(--primary);
+}
+
+.nav-text {
+  color: var(--NavText);
+}
+
+.Hover-Color:hover {
+  background-color: var(--hover);
+}
