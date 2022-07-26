@@ -8,13 +8,10 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --Font: Arial, sans-serif;
-  --primary: #e3dac9;
+  --background: rgb(118, 118, 118);
+  --primary: #b6b6b6;
   --secondary: white;
-  --tertiary: #b12704;
-  --dark: #960018;
-  --text: black;
-  --NavText: black;
+  --Font: Arial, sans-serif;
   --hover: white;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -23,15 +20,11 @@ main {
 }
 
 body {
-  background-color: var(--dark);
+  background-color: var(--background);
 }
 
 .nav {
   background-color: var(--primary);
-}
-
-.nav-text {
-  color: var(--NavText);
 }
 
 .Hover-Color:hover {
