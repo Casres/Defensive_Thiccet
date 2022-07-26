@@ -1,16 +1,18 @@
-import React, { useState } from "react";
-import Nav from "./components/Nav";
-const App = () => {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav from "./components/Nav"
+import Footer from './components/card';
 
-  
+
+function App() {
   return (
-    <div className="App">
-      <Nav></Nav>
-      <div className="container">
-      <div className="card"></div>
+    <Router>
+      <div>
+        <Nav />
+        <Footer />
       </div>
-    </div>
+    </Router>
   );
-};
+}
 
 export default App;

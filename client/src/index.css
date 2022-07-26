@@ -21,6 +21,7 @@ main {
 
 body {
   background-color: var(--background);
+  
 }
 
 .nav {
@@ -29,4 +30,17 @@ body {
 
 .Hover-Color:hover {
   background-color: var(--hover);
+}
+
+.CardContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+width: 100px;
+height: 100px;
+background-color: black;
 }
