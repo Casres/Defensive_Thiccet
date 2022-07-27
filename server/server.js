@@ -22,6 +22,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:3001/defensive-
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
+app.use(require('./routes'));
+
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });

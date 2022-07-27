@@ -1,17 +1,17 @@
 const { Schema, model } = require('mongoose');
-const ClothingSchema = new Schema(
+const AccessoriesSchema = new Schema(
     {
-        ClothingName: {
+        AccessoriesName: {
             type: String,
             trim: true,
-            required: 'clothing Name should be required'
+            required: 'accessory Name should be required'
         },
-        ClothingType: {
+        AccessoriesType: {
             type: String,
             trim: true,
-            required: 'Please enter a type of clothing'
+            required: 'Please enter a type of accessory'
         },
-        ClothingQuanityInStock: {
+        AccessoriesQuanityInStock: {
             type: Int32Array,
             trim: true,
             required: 'stock quantity is required'
@@ -22,4 +22,4 @@ const ClothingSchema = new Schema(
           },
     }
 );
-module.exports
+module.exports = Accessories;
