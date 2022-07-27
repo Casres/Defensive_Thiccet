@@ -22,4 +22,4 @@ mongoose.set('debug', true);
 app.listen(PORT, () => console.log(`🌍 Connected on localhost:${PORT}`));
 
 
-// this is what you will need to set up a mongoDB and server
+// this is what you will need to set up a mongoDB and server 
