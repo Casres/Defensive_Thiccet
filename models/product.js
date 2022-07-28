@@ -15,10 +15,10 @@ const storeProducts = new Schema({
     // default: "Medium",
   },
   productPrice: {
-    type: Number
+    price: Number
   },
   productLink: {
-    type: String
+    URL: String
   }, 
 });
 
