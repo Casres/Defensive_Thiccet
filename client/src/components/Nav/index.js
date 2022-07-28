@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import Login from './login';
 
 function Nav() {
   function showNavigation() {
@@ -15,7 +16,7 @@ function Nav() {
           <Link to="/Update">Update Inventory</Link>
         </li>
         <li className="mx-1">
-          <Link to="/logIn">Log In</Link>
+          <Link to="/Login">Log In</Link>
         </li>
       </ul>
     );
