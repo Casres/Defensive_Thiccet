@@ -1,5 +1,10 @@
-const jwt = require('jsonwebtoken');
-function authenticateToken(req, res, next) {
-    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) =>
-    )
-}
+const withAuth = (req, res, next) => {
+    if (!req.session.user_id) {
+      res.redirect('/login');
+    } else {
+      next();
+    }
+  };
+  
+  module.exports = withAuth;
+  
