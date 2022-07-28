@@ -1,29 +1,19 @@
-<<<<<<< HEAD
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-main {
-  margin: 0 auto;
-  max-width: 90%;
-  padding: 50px 30px;
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue'), url(./fonts/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
+  font-family: 'Rock Salt';
+  src: local('Rock Salt'), url(./fonts/Rock_Salt/RockSalt-Regular.ttf) format('truetype');
 }
+
+
 :root {
-  --background: rgb(23, 49, 122);
-  --primary: #b6b6b6;
-  --secondary: white;
-  --Font: Arial, sans-serif;
-  --hover: white;
-=======
-:root {
-  --primary: #497573;
-  --secondary: #99f7f2;
-  --tertiary: #b2c2c1;
-  --quatrinary: #cadbda;
-  --light: #e1f5f4;
-  --dark: #6c7575;
->>>>>>> 46c4a840bd4903f7a776d7d5278af7e78323a82e
-  --error: rgb(228, 46, 1);
+  --primary: #486e6d;
+  --secondary: #1d312d;
+  --tertiary: #c7c6be;
+  --quatrinary: #dbd6ca;
+  --light: #eff0f0;
+  --dark: #b4af9f;
+  --error: rgb(133, 56, 5);
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -32,27 +22,6 @@ main {
   --spacing-five: calc(1rem * 3);
 }
 
-<<<<<<< HEAD
-.Hover-Color:hover {
-  background-color: var(--hover);
-}
-
-.CardContainer {
-  background-color: rgb(252, 247, 247);
-  height: 400px;
-  width: 100px;
-}
-
-.card {
-width: 100px;
-height: 100px;
-background-color: black;
-}
-
-/* test */
-
-=======
->>>>>>> 46c4a840bd4903f7a776d7d5278af7e78323a82e
 * {
   box-sizing: border-box;
 }
@@ -70,16 +39,20 @@ body {
   line-height: 1.5;
   font-size: 20px;
   color: var(--dark);
-  background-color: #f3fffee1;
+  background-color: var(--secondary);
 }
 
-h1,
+h1 {
+  font-family: 'Rock Salt', cursive;
+  text-shadow: 2px 2px 4px #000000;
+  
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Karla', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   margin: 5px 0;
   line-height: 1.25;
@@ -182,6 +155,8 @@ nav a:hover {
   border-radius: var(--border-radius);
   background-color: var(--light);
   color: var(--dark);
+  text-shadow: 2px 2px 4px #7a7070;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .card-header {
@@ -204,23 +179,9 @@ nav a:hover {
   display: block;
 }
 
-<<<<<<< HEAD
-.btn {
-  font-size: 1.3rem;
-  text-decoration: none;
-  padding: 0.5rem 1.2rem;
-  margin: 5px 0;
-  border-radius: var(--border-radius);
-  border: none;
-  color: var(--dark);
-  outline: none;
-  background-color: var(--secondary);
-  transition: all 0.5s;
-=======
 .form-label {
   font-size: 1.2rem;
   margin: 0.625rem 0 0.25rem;
->>>>>>> 46c4a840bd4903f7a776d7d5278af7e78323a82e
 }
 
 .form-input {
@@ -231,12 +192,6 @@ nav a:hover {
   border: 2px solid var(--dark);
   border-radius: var(--border-radius);
 }
-<<<<<<< HEAD
-.projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-=======
 
 [type='radio']:checked,
 [type='radio']:not(:checked) {
@@ -284,7 +239,6 @@ nav a:hover {
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
->>>>>>> 46c4a840bd4903f7a776d7d5278af7e78323a82e
 }
 
 [type='radio']:checked + label:after {
@@ -802,6 +756,7 @@ nav a:hover {
 
 .text-center {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-justify {
