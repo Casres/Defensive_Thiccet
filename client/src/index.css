@@ -156,7 +156,7 @@ nav a:hover {
   border-radius: var(--border-radius);
   background-color: var(--light);
   color: #333030;
-  text-shadow: 2px 2px 4px #474040;
+  text-shadow: 2px 2px 4px #4740407d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
