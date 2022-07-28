@@ -154,13 +154,14 @@ nav a:hover {
 /* CARDS */
 
 .card-container {
-  width: 45%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 }
+
 .card {
-  margin: 0 0 20px 0;
+  width: 45%;
+  margin: 0 20px 20px 0;
   border: 3px solid var(--dark);
   border-radius: var(--border-radius);
   background-color: var(--light);
