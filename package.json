@@ -1,0 +1,39 @@
+{
+  "name": "defensive_thiccet",
+  "version": "1.0.0",
+  "description": "## Table of Contents:   - [Description](#description)   - [Installation](#installation)   - [Technologies](#technologies)   - [Contributing](#contributing)   - [Author](#author)   - [Website](#link)   - [License](#license)",
+  "main": "index.js",
+  "dependencies": {
+    "graphql": "^16.5.0",
+    "graphql-tag": "^2.12.6",
+    "hoist-non-react-statics": "^3.3.2",
+    "optimism": "^0.16.1",
+    "js-tokens": "^4.0.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.8.1",
+    "symbol-observable": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "react": "^18.2.0",
+    "ts-invariant": "^0.10.3",
+    "tslib": "^2.4.0",
+    "zen-observable": "^0.8.15",
+    "zen-observable-ts": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Casres/Defensive_Thiccet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Casres/Defensive_Thiccet/issues"
+  },
+  "homepage": "https://github.com/Casres/Defensive_Thiccet#readme"
+}
