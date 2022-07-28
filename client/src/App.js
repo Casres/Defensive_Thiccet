@@ -14,8 +14,8 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import Signup from './pages/Signup';
-//import InventoryList from './components/InventoryList';
-//import UpdateForm from './components/UpdateForm';
+import InventoryList from './pages/InventoryList';
+// import UpdateForm from './pages/UpdateForm';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -60,6 +60,14 @@ function App() {
                 path="*" 
                 element={<NoMatch />} 
               />
+              <Route 
+                path="/inventorylist" 
+                element={<InventoryList />} 
+              />
+              {/* <Route 
+                path="/updateform" 
+                element={<UpdateForm />} 
+              /> */}
             </Routes>
           </div>
           <Footer />

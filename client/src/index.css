@@ -12,7 +12,7 @@
   --tertiary: #c7c6be;
   --quatrinary: #dbd6ca;
   --light: #eff0f0;
-  --dark: #b4af9f;
+  --dark: #a5a194;
   --error: rgb(133, 56, 5);
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
@@ -85,6 +85,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  color: #413e3e;
 }
 
 a {
@@ -119,6 +120,8 @@ nav a:hover {
   font-size: 2.5rem;
 }
 
+
+
 .btn,
 .pill {
   font-size: 1.3rem;
@@ -149,14 +152,23 @@ nav a:hover {
 }
 
 /* CARDS */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .card {
-  margin: 0 0 20px 0;
+  width: 45%;
+  margin: 0 20px 20px 0;
   border: 3px solid var(--dark);
   border-radius: var(--border-radius);
   background-color: var(--light);
-  color: var(--dark);
-  text-shadow: 2px 2px 4px #7a7070;
+  color: #333030;
+  text-shadow: 2px 2px 4px #474040;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  min-width: 400px;
 }
 
 .card-header {
