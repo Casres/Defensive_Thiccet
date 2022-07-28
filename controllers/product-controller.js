@@ -2,8 +2,7 @@ const { Product } = require("../models");
 
 const productController = {
   getAllProducts(req, res) {
-    Product
-      .find({})
+    Product.find({})
       .then((dbProductsData) => res.json(dbProductsData))
       .catch((err) => {
         console.log(err);
@@ -12,8 +11,7 @@ const productController = {
   },
 
   getsProductByID({ params }, res) {
-    Product
-      .findOne({ _id: params.id })
+    Product.findOne({ _id: params.id })
       .then((dbProductsData) => {
         if (!dbProductsData) {
           res.status(400).json({
@@ -30,40 +28,37 @@ const productController = {
   },
   // created a product
   createProduct({ body }, res) {
-    Product
-      .create(body)
-      .then((dbProductData) => res.json(dbProductData))
+    Product.create(body)
+      .then((dbProductsData) => res.json(dbProductsData))
       .catch((err) => res.status(400).json(err));
   },
 
   // updates a Product by id
-  updateProduct({ params }, res) {
-    Product
-      .findOneAndUpdate({ _id: params.id }, body, { new: true })
-      .then((dbProducts) => {
-        if (dbProductsData) {
+  updateProduct({ params, body }, res) {
+    Product.findOneAndUpdate({ _id: params.id }, body, { new: true })
+      .then(dbProductsData => {
+        if (!dbProductsData) {
           res.status(404).json({
             message: `No product found with this id, please try again.`,
           });
           return;
         }
+        res.json(dbProductsData);
       })
       .catch((err) => res.status(400).json(err));
   },
 
   // deletes a product by id
   deleteProduct({ params }, res) {
-    Products
-      .findOneAndDelete({ _id: params.id })
-      .then((dbProductsData) => {
+    Product.findOneAndDelete({ _id: params.id })
+      .then(dbProductsData => {
         if (!dbProductsData) {
-          res
-            .status(404)
-            .json({
-              message: "No product found with this id, please try again",
-            });
+          res.status(404).json({
+            message: "No product found with this id, please try again",
+          });
           return;
         }
+        res.json(dbProductsData);
       })
       .catch((err) => res.status(400).json(err));
   },
