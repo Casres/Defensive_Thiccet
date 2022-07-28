@@ -19,7 +19,7 @@ const Header = () => {
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
-              <Link to="/InventoryList">Start Inventory</Link>
+              <Link to="/InventoryList">Search Inventory</Link>
               <a href="/" onClick={logout}>
                 Logout
               </a>
