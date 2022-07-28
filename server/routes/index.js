@@ -1,8 +1,12 @@
-const router = require('express').Router();
-const accesories = require('./accessories-routes');
-const clothing = require('./clothing-routes');
+const router = require("express").Router();
+const htmlRoutes = require("./html");
+const apiRoutes = require("./api");
 
-router.use('/accesories', accesories);
-router.use('/clothing', clothing);
+router.use("/", htmlRoutes);
+router.use("/api", apiRoutes);
+
+router.use((req, res) => {
+  res.status(404).send(`<h1> 🤖 404 Error </h1>`);
+});
 
 module.exports = router;

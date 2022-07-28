@@ -1,5 +1,3 @@
-const Accessories = require('./Accessories');
-const Clothing = require('./Clothing');
-const User = require('./User');
-
-module.exports = { Accessories, Clothing, User};
+const Product = require('./product');
+const User = require('./User')
+module.exports = { Product, User };
