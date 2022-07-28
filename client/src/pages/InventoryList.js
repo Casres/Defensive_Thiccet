@@ -28,7 +28,8 @@ const InventoryList = ({ items, title }) => {
 
 return (
   <div>
-    <h3>{title}</h3>
+    <h3>Category</h3>
+    <div className='card-container'>
         <div key="{item._id}" className="card mb-3">
           <p className="card-header">
             Item Name
@@ -39,6 +40,51 @@ return (
           <div>Size:</div>
           <div>brand:</div>
           </div>
+        </div>
+        <div key="{item._id}" className="card mb-3">
+          <p className="card-header">
+            Item Name
+          </p>
+          <div className="card-body">
+          <div>Price:</div>
+          <div>Quantity:</div>
+          <div>Size:</div>
+          <div>brand:</div>
+          </div>
+        </div>
+        <div key="{item._id}" className="card mb-3">
+          <p className="card-header">
+            Item Name
+          </p>
+          <div className="card-body">
+          <div>Price:</div>
+          <div>Quantity:</div>
+          <div>Size:</div>
+          <div>brand:</div>
+          </div>
+        </div>
+        <div key="{item._id}" className="card mb-3">
+          <p className="card-header">
+            Item Name
+          </p>
+          <div className="card-body">
+          <div>Price:</div>
+          <div>Quantity:</div>
+          <div>Size:</div>
+          <div>brand:</div>
+          </div>
+        </div>
+        <div key="{item._id}" className="card mb-3">
+          <p className="card-header">
+            Item Name
+          </p>
+          <div className="card-body">
+          <div>Price:</div>
+          <div>Quantity:</div>
+          <div>Size:</div>
+          <div>brand:</div>
+          </div>
+        </div>
         </div>
   </div>
 );
