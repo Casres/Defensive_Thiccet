@@ -1,11 +1,12 @@
 const { Schema, model } = require("mongoose");
 
 const storeProducts = new Schema({
-  productCategory: {
-    // make it either clothing or accessories
-  },
+  // either be clothes or accessories 
   generalCategory: {
     type: String
+  },
+  productCategory: {
+    // is it a hat or shirt or accessory item
   },
   productName: {
     type: String
@@ -20,10 +21,7 @@ const storeProducts = new Schema({
   productPrice: {
     price: Number 
   },
-  productLink: {
-    URL: String 
-  }, 
-  inStock: {
+  productStock: {
     type: Number
   },
 });
