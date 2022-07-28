@@ -13,21 +13,14 @@ const InventoryList = ({ items, title }) => {
           items.map(item => (
             <div key={item._id} className="card mb-3">
               <p className="card-header">
-                <Link
-                  to={`/profile/${item.username}`}
-                  style={{ fontWeight: 700 }}
-                  className="text-light"
-                >
-                  {item.username}
-                </Link>{' '}
                 item on {item.createdAt}
               </p>
               <div className="card-body">
                 <Link to={`/item/${item._id}`}>
                   <p>{item.itemText}</p>
                   <p className="mb-0">
-                    Reactions: {item.reactionCount} || Click to{' '}
-                    {item.reactionCount ? 'see' : 'start'} the discussion!
+                    Items: {item.itemCount} || Click to{' '}
+                    {item.itemCount ? 'see' : 'start'} the discussion!
                   </p>
                 </Link>
               </div>
