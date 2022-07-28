@@ -4,6 +4,9 @@ const storeProducts = new Schema({
   productCategory: {
     // make it either clothing or accessories
   },
+  generalCategory: {
+    type: String
+  },
   productName: {
     type: String
   },
@@ -20,6 +23,9 @@ const storeProducts = new Schema({
   productLink: {
     URL: String 
   }, 
+  inStock: {
+    type: Number
+  },
 });
 
 const Product = model('Product', storeProducts);
