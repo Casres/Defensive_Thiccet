@@ -13,14 +13,14 @@ const InventoryList = ({ items, title }) => {
           items.map(item => (
             <div key={item._id} className="card mb-3">
               <p className="card-header">
-                item on {item.createdAt}
+                Item Name {item.createdAt}
               </p>
               <div className="card-body">
                 <Link to={`/item/${item._id}`}>
                   <p>{item.itemText}</p>
                   <p className="mb-0">
                     Items: {item.itemCount} || Click to{' '}
-                    {item.itemCount ? 'see' : 'start'} the discussion!
+                    {item.itemCount ? 'see' : 'start'} the stuff!
                   </p>
                 </Link>
               </div>
