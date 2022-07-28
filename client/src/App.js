@@ -14,6 +14,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import Signup from './pages/Signup';
+
 //import InventoryList from './components/InventoryList';
 //import UpdateForm from './components/UpdateForm';
 
@@ -59,6 +60,10 @@ function App() {
               <Route 
                 path="*" 
                 element={<NoMatch />} 
+              />
+              <Route 
+                path="*" 
+                element={<InventoryList />} 
               />
             </Routes>
           </div>
