@@ -39,6 +39,21 @@ export const ADD_ITEM = gql`
   }
 `;
 
+export const ADD_UPDATE = gql`
+  mutation addItem($itemText: String!) {
+    addItem(itemText: $itemText) {
+      _id
+      itemText
+      createdAt
+      username
+      reactionCount
+      reactions {
+        _id
+      }
+    }
+  }
+`;
+
 export const REMOVE_ITEM = gql`
   mutation removeFriend($id: ID!) {
     removeFriend(id: $id) {
