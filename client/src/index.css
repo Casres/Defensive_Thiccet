@@ -29,6 +29,7 @@
 html,
 body {
   min-height: 100%;
+
 }
 
 body {
@@ -40,8 +41,14 @@ body {
   font-size: 20px;
   color: var(--dark);
   background-color: #1d312d;
-
+  background-blend-mode: luminosity;
+  background-image: url("./images/_DSC8498.jpg");
+  background-size: 1200px;
+  background-position: center;
+  background-repeat: no-repeat;
+   
 }
+
 
 h1 {
   font-family: 'Rock Salt', cursive;
@@ -57,6 +64,8 @@ h6 {
   font-weight: 700;
   margin: 5px 0;
   line-height: 1.25;
+  background-color: #1f1d1d ;
+  padding: 10px;
 }
 
 h1 {
