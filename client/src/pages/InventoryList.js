@@ -43,24 +43,24 @@ return (
         </div>
         <div key="{item._id}" className="card mb-3">
           <p className="card-header">
-            Item Name
+            V-neck sweater
           </p>
           <div className="card-body">
-          <div>Price:</div>
-          <div>Quantity:</div>
-          <div>Size:</div>
-          <div>brand:</div>
+          <div>Price:22.99</div>
+          <div>Quantity:23</div>
+          <div>Size:medium</div>
+          <div>brand:Kohls </div>
           </div>
         </div>
         <div key="{item._id}" className="card mb-3">
           <p className="card-header">
-            Item Name
+            water bottle 
           </p>
           <div className="card-body">
-          <div>Price:</div>
-          <div>Quantity:</div>
-          <div>Size:</div>
-          <div>brand:</div>
+          <div>Price: $400,000,000,000</div>
+          <div>Quantity:3/4</div>
+          <div>Size: Medium</div>
+          <div>brand: Gator world</div>
           </div>
         </div>
         <div key="{item._id}" className="card mb-3">

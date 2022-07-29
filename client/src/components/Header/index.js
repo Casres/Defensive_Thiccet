@@ -17,19 +17,19 @@ const Header = () => {
         </Link>
 
         <nav className="text-center">
-          {/* {Auth.loggedIn() ? ( */}
-            {/* <> */}
-              <Link to="/InventoryList">Start Inventory</Link>
+          {Auth.loggedIn() ? (
+            <>
+              <Link to="/InventoryList">Search Inventory</Link>
               <a href="/" onClick={logout}>
                 Logout
               </a>
-            {/* </>
-            ) : (
-              <>
-              <Link to="/login">Login</Link>
-              <Link to="/signup">Signup</Link>
-              </>
-            )} */}
+            </>
+           ) : (
+             <>
+             <Link to="/login">Login</Link>
+             <Link to="/signup">Signup</Link>
+             </>
+           )}
         </nav>
       </div>
     </header>
