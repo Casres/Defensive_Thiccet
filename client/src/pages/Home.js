@@ -2,11 +2,10 @@ import React from 'react';
 
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
-import { QUERY_ITEM, QUERY_ME_BASIC } from '../utils/queries';
+import { QUERY_ITEM } from '../utils/queries';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_ITEM);
-  const { data: userData } = useQuery(QUERY_ME_BASIC);
   const items = data?.items || [];
 
   const loggedIn = Auth.loggedIn();
@@ -20,10 +19,9 @@ const Home = () => {
         )}
         <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
         </div>
-        {loggedIn && userData ? (
           <div className="col-12 col-lg-3 mb-3">
           </div>
-        ) : null}
+
       </div>
     </main>
   );

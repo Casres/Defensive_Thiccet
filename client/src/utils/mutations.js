@@ -24,45 +24,17 @@ export const ADD_USER = gql`
   }
 `;
 
-export const ADD_ITEM = gql`
-  mutation addItem($itemText: String!) {
-    addItem(itemText: $itemText) {
+export const ADD_PRODUCT = gql`
+  mutation addProduct($productText: String!) {
+    addProduct(productText: $productText) {
       _id
-      itemText
-      createdAt
-      username
-      reactionCount
-      reactions {
-        _id
-      }
-    }
-  }
-`;
-
-export const ADD_UPDATE = gql`
-  mutation addItem($itemText: String!) {
-    addItem(itemText: $itemText) {
-      _id
-      itemText
-      createdAt
-      username
-      reactionCount
-      reactions {
-        _id
-      }
-    }
-  }
-`;
-
-export const REMOVE_ITEM = gql`
-  mutation removeFriend($id: ID!) {
-    removeFriend(id: $id) {
-      _id
-      username
-      friends {
-        _id
-        username
-      }
+      generalCategory
+      productCategory
+      productName
+      brandName
+      productSize
+      productPrice
+      productStock
     }
   }
 `;

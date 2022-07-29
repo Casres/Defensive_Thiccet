@@ -19,7 +19,7 @@ const storeProducts = new Schema({
     // default: "Medium",
   },
   productPrice: {
-    price: Number 
+    type: Number 
   },
   productStock: {
     type: Number

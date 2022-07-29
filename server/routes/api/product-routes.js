@@ -15,5 +15,5 @@ router.route("/:id")
 .get(getsProductByID) 
 .put(updateProduct) 
 .delete(deleteProduct); 
- 
+
 module.exports = router; 
