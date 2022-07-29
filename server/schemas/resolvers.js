@@ -9,6 +9,9 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).select("-__v -password");
     },
+    product: async () => {
+      return Product.find().select();
+    }
   },
 
   Mutation: {

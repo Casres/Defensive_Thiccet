@@ -18,7 +18,7 @@ import InventoryList from './pages/InventoryList';
 // import UpdateForm from './pages/UpdateForm';
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: 'http://localhost:3001/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {

@@ -56,12 +56,17 @@ export const QUERY_ME = gql`
   }
 `;
 
-export const QUERY_ME_BASIC = gql`
-  {
-    me {
+export const QUERY_Product = gql`
+query Get_product {
+    product {
       _id
-      username
-      email
+      generalCategory
+      productCategory
+      productName
+      brandName
+      productSize
+      productPrice
+      productStock
     }
   }
 `;
