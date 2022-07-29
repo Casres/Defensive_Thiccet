@@ -39,7 +39,8 @@ body {
   line-height: 1.5;
   font-size: 20px;
   color: var(--dark);
-  background-color: var(--secondary);
+  background-color: #1d312d;
+
 }
 
 h1 {
@@ -100,6 +101,7 @@ a:visited {
 nav {
   width: 100%;
   justify-content: center;
+
 }
 
 nav a {
@@ -154,12 +156,13 @@ nav a:hover {
 /* CARDS */
 
 .card-container {
-  width: 45%;
+  
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 }
 .card {
+  width: 45%;
   margin: 0 0 20px 0;
   border: 3px solid var(--dark);
   border-radius: var(--border-radius);
